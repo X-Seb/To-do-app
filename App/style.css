@@ -130,10 +130,18 @@ h1, h3 {
     border-radius: 5px;
     background-color: #373030;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    @media (max-width: 800px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
 }
 
 .task-form * {
     margin-inline: 10px;
+    @media (max-width: 800px) {
+        margin: 8px;
+    }
 }
 
 .task-form textarea{
@@ -143,6 +151,16 @@ h1, h3 {
     font-size: 20px;
     padding: 2px;
     border-radius: 5px;
+    @media (max-width: 800px) {
+        flex: 3 1 auto;
+        width: auto;
+    }
+}
+
+.task-form select, .task-form button {
+    @media (max-width: 800px) {
+        flex: 1 1 auto;
+    }
 }
 
 .task-form select {
