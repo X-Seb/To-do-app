@@ -1,4 +1,4 @@
-// Task Manager elements:
+// Master task list:
 let taskList = [];
 
 // Task Form elements:
@@ -42,7 +42,7 @@ function createTask(event) {
     display: true,
   };
 
-  console.log("Task Name: ", taskName, " and Priority: ", taskPriority);
+  console.log(`New Task! Name: "${taskName}" and Priority: "${taskPriority}"`);
   taskList.push(task);
   taskTextInput.value = "";
   taskPriorityInput.value = "Low";
@@ -97,9 +97,8 @@ function editTask(index) {
 }
 
 function quickEdit(index) {
-  console.log("Quick Edit: ", index);
-  taskList[index].priority = target.value;
-
+  const task = taskContainer.children[index];
+  taskList[index].priority = task.querySelector("select").value;
   updateUI();
 }
 
