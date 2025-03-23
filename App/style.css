@@ -32,18 +32,35 @@ h1, h3 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
+
 
 #left-task-area{
     flex: 2.5;
+    max-width: 800px;
     background: #efefef;
     margin: 10px;
 }
 
+#left-task-area h3 {
+    color: #373030;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+}
+
 #right-option-area {
     flex: 1;
+    max-width: 320px;
     background-color: rgb(57, 57, 57);
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: #373030 0px 0px 10px;
     margin: 10px;
     display: flex;
@@ -66,8 +83,9 @@ h1, h3 {
 #right-option-area textarea { 
     resize: none;
     align-items: center;
-    font-size: 1.2em;
+    font-size: 1.4em;
     justify-content: center;
+    padding: 5px;
 }
 
 #right-option-area select{
@@ -84,10 +102,20 @@ h1, h3 {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #14a8e3;
+    background-color: #fff;
     font-size: 20px;
     cursor: pointer;
     font-weight: bold;
+}
+
+#right-option-area button:hover {
+    background-color: #14a8e3;
+    color: #ffffff;
+}
+
+#right-option-area select:hover {
+    background-color: #14a8e3;
+    color: #ffffff;
 }
 
 
@@ -97,7 +125,7 @@ h1, h3 {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    padding: 10px;
+    padding: 7px;
     border: 1px solid #bcbcbc;
     border-radius: 5px;
     background-color: #373030;
@@ -113,6 +141,18 @@ h1, h3 {
     width: 100%;
     text-align: left;
     font-size: 20px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.task-form select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .task-form button {
@@ -139,32 +179,56 @@ h1, h3 {
     border-radius: 5px;
 }
 
-.btn-edit-task{
-    background-color: #f0f0f0;
-    color: #373030;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
+.task * {
     margin: 5px;
-    cursor: pointer;
-    aspect-ratio: 1;
 }
 
-.btn-delete-task{
-    background-color: #f51717;
+.task button {
+    background-color: #ffffff;
     color: #373030;
+
     border: none;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
     cursor: pointer;
     aspect-ratio: 1;
+    display: grid;
+}
+
+.task select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.task select:hover {
+    background-color: #14a8e3;
+    color: #ffffff;
+}
+
+.btn-edit-task:hover {
+    background-color: #14a8e3;
+    color: #ffffff;
+}
+
+.btn-delete-task:hover {
+    background-color: #e31414;
+    color: #ffffff;
+}
+
+.task i {
+    font-size: 2cqmin;
 }
 
 .task p {
     flex: 1;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .no-task{

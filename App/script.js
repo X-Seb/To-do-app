@@ -27,7 +27,7 @@ function initialLoad() {
   updateUI();
 }
 
-function createTask() {
+function createTask(event) {
   event.preventDefault();
   const taskName = taskTextInput.value;
   if (!taskName) {
