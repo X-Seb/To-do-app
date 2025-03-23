@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/f0ae78a5da.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +20,8 @@
        <div id = "left-task-area">
         <h3>What's on your mind today...</h3>
         <form class = "task-form">
-            <textarea id = "task-input" placeholder = "Enter a task"></textarea>
-            <select>
+            <textarea id = "task-name-input" placeholder = "Enter a task"></textarea>
+            <select id = "task-priority-input">
                 <option value="0">Low</option>
                 <option value="1">Medium</option>
                 <option value="2">High</option>
@@ -56,4 +55,5 @@
     </div>
     </section>
 </body>
+<script src="script.js"></script>
 </html>

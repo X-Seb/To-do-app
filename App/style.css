@@ -99,8 +99,38 @@ h1, h3 {
     justify-content: center;
     align-items: center;
     flex: 1;
+    background-color: #373030;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-edit-task{
+    background-color: #f0f0f0;
+    color: #373030;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    aspect-ratio: 1;
+}
+
+.btn-delete-task{
+    background-color: #f51717;
+    color: #373030;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    aspect-ratio: 1;
 }
 
 .task p {
-    flex: 3;
+    flex: 1;
+    text-align: left;
+    font-size: 1.2em;
 }
