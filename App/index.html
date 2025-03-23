@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f0ae78a5da.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bytesized&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id = "top">
+        <h1>TO-DO List</h1>
+        <p>Organize your life. The easy way.</p>
+    </section>
+
+    <section id = "center">
+       <div id = "left-task-area">
+        <h3>What's on your mind today...</h3>
+        <form class = "task-form">
+            <textarea id = "task-input" placeholder = "Enter a task"></textarea>
+            <select>
+                <option value="0">Low</option>
+                <option value="1">Medium</option>
+                <option value="2">High</option>
+            </select>
+            <button id="btn-create-task"><i class="fa-solid fa-plus"></i></button>
+        </form>
+        <h3>My Current Tasks</h3>
+        <div id="task-container">
+            <div class="task">
+                <p>Task 1</p>
+                <select>
+                    <option value="0">Low</option>
+                    <option value="1">Medium</option>
+                    <option value="2">High</option>
+                </select>
+                <button class="btn-edit-task"><i class="fa-solid fa-pen"></i></button>
+                <button class="btn-delete-task"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id = "right-option-area">
+        <h3>Filter Tasks</h3>
+        <textarea id = "task-search" placeholder = "Search"></textarea>
+        <select class="filter">
+            <option value="0">Any Priority</option>
+            <option value="1">Low</option>
+            <option value="2">Medium</option>
+            <option value="3">High</option>
+        </select>
+    </div>
+    </section>
+</body>
+</html>
