@@ -6,9 +6,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f0f0f0;
+}
+
+h1, h3 {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    padding: 10px;
 }
 
 #top {
@@ -17,46 +22,73 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    font-size: 1.6em;
-    margin-bottom: 30px;
+    font-size: 1.8em;
+    margin-bottom: 50px;
+    font-style: italic;
+    font-weight: bold;
 }
 
 #center{
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 #left-task-area{
-    flex: 2;
+    flex: 2.5;
     background: #efefef;
     margin: 10px;
 }
 
 #right-option-area {
     flex: 1;
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(57, 57, 57);
     border-radius: 12px;
     box-shadow: #373030 0px 0px 10px;
     margin: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: top;
 }
 
 #right-option-area * {
-   padding: 5px;
-   margin: 12px;
+    margin: 12px;
+    min-height: 40px;
+}
+
+#right-option-area h3 {
+    color: #ffffff;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
 }
 
 #right-option-area textarea { 
     resize: none;
-    width: 100%;
+    align-items: center;
+    font-size: 1.2em;
+    justify-content: center;
 }
 
-h1, h3 {
-    font-family: sans-serif;
-    font-weight: 800;
-    font-style: normal;
+#right-option-area select{
     padding: 10px;
-  }
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#right-option-area button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #14a8e3;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
 
 .task-form {
@@ -133,4 +165,18 @@ h1, h3 {
     flex: 1;
     text-align: left;
     font-size: 1.2em;
+}
+
+.no-task{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #373030;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 10px;
+    padding: 10px;
 }
