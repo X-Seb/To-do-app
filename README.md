@@ -2,6 +2,8 @@
 
 Organize your life. The easy way.
 
+Try it here: https://easylist-app.vercel.app/
+
 ### ⚡ What is this?
 
 EasyList is a lightweight, zero-dependency task manager built entirely in Vanilla JavaScript. It does DOM manipulation, state management, and local persistence without the overhead of a framework.
